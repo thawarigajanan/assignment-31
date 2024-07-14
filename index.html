@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Oversizes T-shirts </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img1.jpg" alt="Ct-shirts" class="main-img" id="main-img">
+
+    <div class="product-img-container">
+        <img src="img1.jpg" alt="Ct-shirts" class="product-img" onclick="changeimg(1)">
+        <img src="img2.jpg" alt="Ct-shirts" class="product-img" onclick="changeimg(2)">
+        <img src="img3.jpg" alt="Ct-shirts" class="product-img" onclick="changeimg(3)">
+        <img src="img4.jpg" alt="Ct-shirts" class="product-img" onclick="changeimg(4)">
+        <img src="img5.jpg" alt="Ct-shirts" class="product-img" onclick="changeimg(5)">
+    </div>
+
+    <script>
+        function changeimg(num){
+            const img = document.getElementById("main-img")
+
+            if(num==1){
+                img.src = "/.img1.jpg"
+            }
+            else if (num==2){
+                img.src = "./img2.jpg"
+            }
+            else if (num==3){
+                img.src = "./img3.jpg"
+            }
+            else if (num==4){
+                img.src = "./img4.jpg"
+            }
+            else{
+                img.src = "./img5.jpg"
+            }
+        }
+    </script>
+</body>
+</html>
